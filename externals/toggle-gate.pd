@@ -1,0 +1,12 @@
+#N canvas 0 22 450 300 10;
+#X obj 100 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 85 145 outlet;
+#X obj 100 79 inlet set;
+#X obj 85 59 inlet get;
+#X obj 85 121 f;
+#X connect 0 0 4 1;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X coords 0 -1 1 1 15 15 2 100 100;

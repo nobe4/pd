@@ -1,0 +1,11 @@
+#N canvas 214 155 450 300 10;
+#X msg 59 84 Hello world;
+#X obj 59 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 136 138 print;
+#X msg 171 49 bang;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 1 0 3 0;
+#X connect 3 0 2 0;
+#X connect 3 0 0 0;

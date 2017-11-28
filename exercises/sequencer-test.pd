@@ -1,0 +1,23 @@
+#N canvas 338 353 585 342 10;
+#X msg 126 -18 bang;
+#X msg 162 -19 stop;
+#X obj 127 12 metro;
+#X floatatom 198 -19 5 0 0 0 - - -;
+#X obj 127 76 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 144 76 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 162 76 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 180 76 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 127 35 sequencer-demo;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;
+#X connect 1 0 8 1;
+#X connect 2 0 8 0;
+#X connect 3 0 2 1;
+#X connect 8 0 4 0;
+#X connect 8 1 5 0;
+#X connect 8 2 6 0;
+#X connect 8 3 7 0;

@@ -1,0 +1,10 @@
+#N canvas 434 239 743 524 10;
+#X obj 78 110 osc~;
+#X text 73 42 Sine;
+#X text 131 40 Saw;
+#X obj 135 108 phasor~;
+#X msg 187 63 1000;
+#X text 239 42 Reference frequency;
+#X obj 548 134 array;
+#X connect 4 0 3 1;
+#X connect 4 0 0 1;

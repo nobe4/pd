@@ -1,0 +1,38 @@
+#N canvas 0 22 1440 851 8;
+#X obj 37 34 metro;
+#X msg 37 53 60;
+#X obj 37 91 noteout 1;
+#X msg 299 12 500;
+#X msg 331 12 750;
+#X obj 37 12 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 313 34 s tempo;
+#X obj 63 12 r tempo;
+#X obj 37 72 makenote 40 50;
+#X obj 387 8 r tempo;
+#X obj 388 49 s duration;
+#X obj 113 53 r duration;
+#X obj 321 169 vsl 7 64 100 200 0 0 tempo empty empty 0 -9 0 10 -262144
+-1 -1 2400 1;
+#X obj 364 177 vsl 7 64 0.1 0.9 0 0 coef empty empty 0 -9 0 10 -262144
+-1 -1 10800 1;
+#X obj 433 8 r coef;
+#X obj 388 29 *;
+#X floatatom 322 246 5 0 0 0 - - -, f 5;
+#X floatatom 364 245 5 0 0 0 - - -, f 5;
+#X floatatom 129 72 5 0 0 0 - - -, f 5;
+#X connect 0 0 1 0;
+#X connect 1 0 8 0;
+#X connect 3 0 6 0;
+#X connect 4 0 6 0;
+#X connect 5 0 0 0;
+#X connect 7 0 0 1;
+#X connect 8 0 2 0;
+#X connect 8 1 2 1;
+#X connect 9 0 15 0;
+#X connect 11 0 8 2;
+#X connect 11 0 18 0;
+#X connect 12 0 16 0;
+#X connect 13 0 17 0;
+#X connect 14 0 15 1;
+#X connect 15 0 10 0;
